@@ -5,7 +5,7 @@ const { species } = data;
 const countAnimals = (animal) => {
   const amount = {};
   if (animal === undefined) {
-    species.map(({ name, residents }) => {
+    species.forEach(({ name, residents }) => {
       amount[name] = residents.length;
     });
     return amount;
