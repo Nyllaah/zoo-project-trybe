@@ -17,6 +17,6 @@ const countAnimals = (animal) => {
     .filter(({ sex }) => sex === animal.sex).length;
 };
 
-countAnimals({ species: 'giraffes', sex: 'female' });
+countAnimals();
 
 module.exports = countAnimals;
