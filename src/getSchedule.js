@@ -1,7 +1,6 @@
 const data = require('../data/zoo_data');
 
-const { species } = data;
-const { hours } = data;
+const { species, hours } = data;
 
 const isAnimal = (scheduleTarget) => species.map(({ name }) => name).some((el) =>
   el === scheduleTarget);
