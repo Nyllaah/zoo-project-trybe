@@ -14,7 +14,7 @@ const countEntrants = (entrants) => {
 };
 
 const calculateEntry = (entrants) => {
-  if (entrants === undefined) {
+  if (!entrants) {
     return 0;
   }
   const { child, adult, senior } = countEntrants(entrants);
