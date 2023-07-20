@@ -1,7 +1,7 @@
 const data = require('../data/zoo_data');
 
 const getEmployeeByName = (employeeName) => {
-  if (employeeName === undefined) {
+  if (!employeeName) {
     return {};
   }
   return data.employees.find((employee) =>
