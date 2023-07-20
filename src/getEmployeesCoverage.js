@@ -27,9 +27,8 @@ const createFullCoverage = () => {
   return fullCoverage;
 };
 
-const isEmployee = (list, info) => {
-  return list.some(({ fullName, id }) => fullName.includes(info[0]) || id === info[0]);
-};
+const isEmployee = (list, info) => list.some(({ fullName, id }) =>
+  fullName.includes(info[0]) || id === info[0]);
 
 const getEmployeesCoverage = (info) => {
   const fullCoverage = createFullCoverage();
