@@ -23,4 +23,10 @@ describe('Testes da função HandlerElephants', () => {
   it('retorna undefined se não receber argumentos', () => {
     expect(handlerElephants()).toBe(undefined);
   });
+  it('ao receber um objeto vazio como argumentodeve retornar a string: Parâmetro inválido, é necessário uma string', () => {
+    expect(handlerElephants({})).toBe('Parâmetro inválido, é necessário uma string');
+  });
+  it('passada uma string que não contempla uma funcionalidade deve retornar null', () => {
+    expect(handlerElephants('other')).toBe(null);
+  });
 });
