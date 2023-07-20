@@ -32,7 +32,7 @@ const isEmployee = (list, info) => list.some(({ fullName, id }) =>
 
 const getEmployeesCoverage = (info) => {
   const fullCoverage = createFullCoverage();
-  if (info === undefined) {
+  if (!info) {
     return fullCoverage;
   }
   if (!isEmployee(fullCoverage, Object.values(info))) {
